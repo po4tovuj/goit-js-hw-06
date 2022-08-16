@@ -6,7 +6,6 @@ const checkValid = ({ target, target: { value } }) => {
     case valueLength == inputLength && target.classList.contains('invalid'):
       target.classList.add('valid');
       target.classList.remove('invalid');
-
       break;
     case valueLength != inputLength && target.classList.contains('valid'):
       target.classList.add('invalid');
