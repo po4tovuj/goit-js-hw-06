@@ -20,7 +20,5 @@ const checkValid = ({ target, target: { value } }) => {
       break;
   }
 };
-(function () {
-  const inputElement = document.querySelector('#validation-input');
-  inputElement.addEventListener('blur', checkValid);
-})();
+const inputElement = document.querySelector('#validation-input');
+inputElement.addEventListener('blur', checkValid);

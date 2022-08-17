@@ -7,8 +7,10 @@ function handleSubmit(event) {
   const {
     elements: { email, password },
   } = event.currentTarget;
+  // ** i dont see here needs for {} its just 1 line
+  //** and it could be returned without {} but i agree that its needed to have 'return' */
   if (email.value === '' || password.value === '')
-    alert('all fields should be filled');
+    return alert('all fields should be filled');
   console.log({
     email: email.value,
     password: password.value,

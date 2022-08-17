@@ -10,13 +10,9 @@ const decrementCounter = () => {
   document.querySelector('#value').innerText = counterValue;
   //
 };
-(function () {
-  // on practice its better to check are this elements exist
-  document
-    .querySelector('[data-action="decrement"]')
-    .addEventListener('click', decrementCounter);
+// on practice its better to check are this elements exist
+const decBtn = document.querySelector('[data-action="decrement"]');
 
-  document
-    .querySelector('[data-action="increment"]')
-    .addEventListener('click', incrementCounter);
-})();
+decBtn.addEventListener('click', decrementCounter);
+const incBtn = document.querySelector('[data-action="increment"]');
+incBtn.addEventListener('click', incrementCounter);

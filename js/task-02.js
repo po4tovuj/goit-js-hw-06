@@ -6,14 +6,12 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-(function () {
-  const listElement = document.querySelector('#ingredients');
-  if (!listElement) return;
-  const childElements = ingredients.map((item) => {
-    let child = document.createElement('li');
-    child.innerHTML = item;
-    child.classList.add('item');
-    return child;
-  });
-  listElement.prepend(...childElements);
-})();
+const listElement = document.querySelector('#ingredients');
+if (!listElement) return;
+const childElements = ingredients.map((item) => {
+  let child = document.createElement('li');
+  child.innerHTML = item;
+  child.classList.add('item');
+  return child;
+});
+listElement.prepend(...childElements);
